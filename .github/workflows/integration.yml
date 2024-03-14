@@ -1,13 +1,13 @@
 name: Build a NEXTJS web app
-on: push
-jobs:
-  build-project:
-    name: Build Project
-    runs-on: ubuntu-latest
-    steps:
-      -name: Checkout Code
-      uses: actions/checkout@v4
-      -name: Install NPM dependencies
-      run: npm install
-      -name: Build Project assets
-      run: npm run build
+on: push 
+jobs: 
+    build-project:
+        name: Build Project
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v4
+            - name: Install NPM dependencies
+              run: npm install
+            - name: Build Project assets
+              run: npm run build
